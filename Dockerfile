@@ -11,7 +11,8 @@ ENV DERBY_PORT=${DERBY_PORT:-1527}\
     LIQUIBASE_CHANGELOGFILE=${LIQUIBASE_CHANGELOGFILE:-changelog.xml}\
     DERBY_PORT=${DERBY_PORT:-1527}\
     DERBY_HOST=${DERBY_HOST:-localhost}\
-    DERBY_DB=${DERBY_DB:-dbtest}
+    DERBY_DB=${DERBY_DB:-dbtest}\
+    LIQUIBASE_DEFAULTSCHEMA=${LIQUIBASE_DEFAULTSCHEMA:-app}
 
 ADD ${liquibase_download_url}/${tarfile} /tmp/${tarfile}
 ADD http://mirrors.ae-online.de/apache//db/derby/db-derby-10.15.1.3/db-derby-10.15.1.3-bin.tar.gz /tmp/db-derby-10.15.1.3-bin.tar.gz

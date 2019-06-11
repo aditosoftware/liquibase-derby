@@ -25,4 +25,4 @@ then
   exit 1
 fi
 
- /usr/local/bin/liquibase --classpath=${LIQUIBASE_CLASSPATH} --changeLogFile=${LIQUIBASE_CHANGELOGFILE} --url="jdbc:derby://${DERBY_HOST}:${DERBY_PORT}/${DERBY_DB}" $@
+ /usr/local/bin/liquibase --defaultSchemaName=${LIQUIBASE_DEFAULTSCHEMA} --classpath=${LIQUIBASE_CLASSPATH} --changeLogFile=${LIQUIBASE_CHANGELOGFILE} --url="jdbc:derby://${DERBY_HOST}:${DERBY_PORT}/${DERBY_DB}" $@

@@ -8,6 +8,7 @@ This image contain the liquibase tool. This tool can help you import the data (f
 **DERBY_HOST** - URL or IP of derby server. Default "localhost"  
 **DERBY_PORT** - derby server port. Default "1527"  
 **DERBY_DB** - name of derby db. Default "dbtest"  
+**LIQUIBASE_DEFAULTSCHEMA** - name of schama. Default "app"
 
 # Volumes
 The workingdir ist "/workspace", so you need to mount you liqubiase xml files into this folder.
